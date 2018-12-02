@@ -65,12 +65,12 @@ async def help():
 async def help_nsfw():
         embed = discord.Embed(color = 0xFF00FF, title = "NSFW help")
     
-        embed.add_field(name = ":boobs", value = "Ukáže to random kozi", inline = False)
-        embed.add_field(name = ":pussy", value = "Ukáže to random vagínu (Neni hotovo)", inline = False)
-        embed.add_field(name = ":ass", value = "Ukáže to random zadek! (Neni hotovo)", inline = False)
-        embed.add_field(name = ":anal", value = "Ukáže to random gif šukání do análu (Neni hotovo)", inline = False)
+        embed.add_field(name = ":boobs", value = "Ukáže to random prsa", inline=False)
+        embed.add_field(name = ":pussy", value = "Ukáže to random vagínu (Neni hotovo)", inline=False)
+        embed.add_field(name = ":ass", value = "Ukáže to random zadek! (Neni hotovo)", inline=False)
+        embed.add_field(name = ":anal", value = "Ukáže to random gif šukání do análu (Neni hotovo)", inline=False)
         embed.set_footer(text = "Udělala Nela | v0.3")
-     await client.say(embed=embed)
+        await client.say(embed=embed)
                   
     
 
