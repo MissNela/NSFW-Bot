@@ -152,7 +152,7 @@ async def userinfo(ctx, user: discord.Member):
     embed.add_field(name="Nejvišší role", value=user.top_role)
     embed.add_field(name="Připojil", value=user.joined_at)
     embed.set_thumbnail(url=user.avatar_url)
-    embed.set_footer(text = "Vytbořila Nela | Bot verze: 0.1")
+    embed.set_footer(text = "Vytvořila Nela | Bot verze: 0.3")
     await client.say(embed=embed)
 
 
