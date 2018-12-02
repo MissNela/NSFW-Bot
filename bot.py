@@ -70,7 +70,7 @@ async def help_nsfw():
         embed.add_field(name = ":ass", value = "Ukáže to random zadek! (Neni hotovo)", inline = False)
         embed.add_field(name = ":anal", value = "Ukáže to random gif šukání do análu (Neni hotovo)", inline = False)
         embed.set_footer(text = "Udělala Nela | v0.3")
-        await client.say(embed=embed)
+     await client.say(embed=embed)
                   
     
 
