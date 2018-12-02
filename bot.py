@@ -61,6 +61,17 @@ async def help():
 )
     await client.say(embed=embed)
   
+@client.command()
+async def help nsfw():
+    embed = discord.Embed(color = 0xFF00FF, title = "NSFW help")
+    embed.add_field(name = ":boobs", value = "Ukáže to random kozi", inline = False)
+    embed.add_field(name = ":pussy", value = "Ukáže to random vagínu (Neni hotovo)", inline = False)
+    embed.add_field(name = ":ass", value = "Ukáže to random zadek! (Neni hotovo)", inline = False)
+    embed.add_field(name = ":anal", value = "Ukáže to random gif šukání do análu (Neni hotovo)", inline = False)
+    embed.set_footer(text = "Udělala Nela | v0.3")
+    await client.say(embed=embed)
+                  
+    
 
 @client.command(pass_context=True)
 async def ping(ctx):
@@ -156,4 +167,16 @@ async def userinfo(ctx, user: discord.Member):
     await client.say(embed=embed)
 
 
+@client.command()
+async def boobs():
+         embed = discord.Embed(title="Boobs!", color = 0xDAA520)
+         embed.set_footer(text="Tip: If the image didnt load try to use this command again! | Developer Nela | Bot version: 0.3")
+         embed.set_image(url = random.choice([
+             "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfmGLzITgndSv0_Bm7krIpWRtuc-rMdUsprJTKuO-SmlOMqsVr",
+             "http://content.wafflegirl.com/galleries/content/0/168/168254_608c92c.jpg",
+             "http://www.big-teen-tits.com/wp-content/uploads/sites/17/2018/01/bigteentits-semeji.jpg",
+             "https://cdn.discordapp.com/attachments/365223489331789825/518907741645832199/483578_10.jpg",
+             "http://cdn.bigtitsboob.com/st/thumbs1/205/Tt8qw4Zys5.jpg"]))
+        await client.say(embed=embed)
+    
 client.run(os.getenv("BOT_TOKEN"))
