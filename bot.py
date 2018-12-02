@@ -64,7 +64,7 @@ async def help():
 )
     await client.say(embed=embed)
   
-  @client.command(pass_context = True)
+@client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)
 
 async def warn(ctx, userName: discord.User, *, message:str):
