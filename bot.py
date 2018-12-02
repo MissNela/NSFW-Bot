@@ -180,4 +180,17 @@ async def boobs():
              "http://cdn.bigtitsboob.com/st/thumbs1/205/Tt8qw4Zys5.jpg"]))
          await client.say(embed=embed)
     
+@client.command()
+async def ass():
+    embed = discord.Embed(title = "Look at this ass!", color = 0x7B68EE)
+    embed.set_foother(text="Tip: If image didnt load try it again! | Developer Nela | v 0.4")
+    embed.set_image(url = random.choice([
+        "https://ae01.alicdn.com/kf/HTB1NEMzOVXXXXXqXpXXq6xXFXXX2/High-Cut-Sexy-Denim-Booty-Short-Shorts-Vintage-Cute-Bikini-Double-Button-Low-Rise-Waist-Micro.jpg_220x220.jpg",
+        "https://i.pinimg.com/originals/18/0b/f7/180bf7075098e8e9a41900d7a37bc4df.jpg",
+        "https://i.ytimg.com/vi/TZspuRWvOzo/maxresdefault.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjAnYzC73hIu_nPIHMIpP05cZEKyIm9yRX-pbzm7j07OUGU_Fd",
+        "https://i.pinimg.com/736x/74/4e/c8/744ec8e74f4ecce38711a3c3342efcae.jpg",
+        "https://i.pinimg.com/originals/8d/02/6c/8d026cdf1e1f7e00a5572ca706b9b318.jpg"]))
+    await client.say(embed=embed)
+
 client.run(os.getenv("BOT_TOKEN"))
