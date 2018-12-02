@@ -69,7 +69,7 @@ async def help_nsfw():
         embed.add_field(name = ":pussy", value = "Ukáže to random vagínu (Neni hotovo)", inline=False)
         embed.add_field(name = ":ass", value = "Ukáže to random zadek! (Neni hotovo)", inline=False)
         embed.add_field(name = ":anal", value = "Ukáže to random gif šukání do análu (Neni hotovo)", inline=False)
-        embed.set_footer(text = "Udělala Nela | v0.3")
+        embed.set_footer(text = "Udělala Nela | v0.4")
         await client.say(embed=embed)
                   
     
@@ -164,14 +164,14 @@ async def userinfo(ctx, user: discord.Member):
     embed.add_field(name="Nejvišší role", value=user.top_role)
     embed.add_field(name="Připojil", value=user.joined_at)
     embed.set_thumbnail(url=user.avatar_url)
-    embed.set_footer(text = "Vytvořila Nela | Bot verze: 0.3")
+    embed.set_footer(text = "Vytvořila Nela | Bot verze: 0.4")
     await client.say(embed=embed)
 
 
 @client.command()
 async def boobs():
          embed = discord.Embed(title="Boobs!", color = 0xDAA520)
-         embed.set_footer(text="Tip: If the image didnt load try to use this command again! | Developer Nela | Bot version: 0.3")
+         embed.set_footer(text="Tip: If the image didnt load try to use this command again! | Developer Nela | Bot version: 0.4")
          embed.set_image(url = random.choice([
              "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfmGLzITgndSv0_Bm7krIpWRtuc-rMdUsprJTKuO-SmlOMqsVr",
              "http://content.wafflegirl.com/galleries/content/0/168/168254_608c92c.jpg",
@@ -183,7 +183,7 @@ async def boobs():
 @client.command()
 async def ass():
     embed = discord.Embed(title = "Look at this ass!", color = 0x7B68EE)
-    embed.set_foother(text="Tip: If image didnt load try it again! | Developer Nela | v 0.4")
+    embed.set_footer(text="Tip: If image didnt load try it again! | Developer Nela | v 0.4")
     embed.set_image(url = random.choice([
         "https://ae01.alicdn.com/kf/HTB1NEMzOVXXXXXqXpXXq6xXFXXX2/High-Cut-Sexy-Denim-Booty-Short-Shorts-Vintage-Cute-Bikini-Double-Button-Low-Rise-Waist-Micro.jpg_220x220.jpg",
         "https://i.pinimg.com/originals/18/0b/f7/180bf7075098e8e9a41900d7a37bc4df.jpg",
