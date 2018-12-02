@@ -62,7 +62,7 @@ async def help():
     await client.say(embed=embed)
   
 @client.command()
-async def help nsfw():
+async def help_nsfw():
     embed = discord.Embed(color = 0xFF00FF, title = "NSFW help")
     embed.add_field(name = ":boobs", value = "Ukáže to random kozi", inline = False)
     embed.add_field(name = ":pussy", value = "Ukáže to random vagínu (Neni hotovo)", inline = False)
