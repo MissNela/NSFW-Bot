@@ -206,4 +206,18 @@ async def anal():
         "https://66.media.tumblr.com/2f40e6f1528391e475cc5a6a5a6849ae/tumblr_n6hw69yr6V1tdoqzeo1_400.gif"]))
     await client.say(embed=embed)
     
+@client.command()
+async def pussy():
+    embed = discord.Embed(title = "Pussy!", color = 0xA52A2A)
+    embed.set_footer(text = "Tip: Pokud se ti to nenačetlo skus to znova! | Developer Nela | v0.4")
+    embed.set_image(url = random.choice([
+        "https://i.redd.it/nhjst7gk6a121.jpg",
+        "https://i.redd.it/7n7kkddqiz121.jpg",
+        "http://i.imgur.com/MmLS39U.jpg",
+        "https://i.redd.it/ykdrgvqdzq121.jpg",
+        "https://i.imgur.com/JXz5Htz.gif",
+        "https://i.imgur.com/b71lIa6.jpg"]))
+    await client.say(embed=embed)
+        
+                     
 client.run(os.getenv("BOT_TOKEN"))
