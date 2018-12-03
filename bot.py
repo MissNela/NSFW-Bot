@@ -193,4 +193,17 @@ async def ass():
         "https://i.pinimg.com/originals/8d/02/6c/8d026cdf1e1f7e00a5572ca706b9b318.jpg"]))
     await client.say(embed=embed)
 
+@client.command()
+async def anal():
+    embed = discord.Embed(title = "Užíváš si?", color = 0x8B4513)
+    embed.set_footer(text = "Tip: Pokud se obrázek (gif) nenačetl skuste tento příkaz znova! | Developer Nela | v0.4")
+    embed.set_image(url = random.choice([
+        "https://content.shoosh.co/images/photos/galleries/52/0c67e009f7a900ef0ce155d2f1e04e97.gif",
+        "https://i0.wp.com/adultporngifs.com/wp-content/uploads/2018/10/anal-sex-pov-porn-gif-anal-anal-sex-anal-pov-pov-pussy-porn-gif-gif-porn-closeup.gif?fit=720%2C543&ssl=1",
+        "https://namethatpornstar.com/imagecache/NTPSz176vis0033m.gif",
+        "https://images.sex.com/images/pinporn/2016/08/18/300/16386332.gif",
+        "http://sexyfantasme.s.e.pic.centerblog.net/6d9240ad.gif",
+        "https://66.media.tumblr.com/2f40e6f1528391e475cc5a6a5a6849ae/tumblr_n6hw69yr6V1tdoqzeo1_400.gif"]))
+    await client.say(embed=embed)
+    
 client.run(os.getenv("BOT_TOKEN"))
